@@ -68,7 +68,7 @@ async function updateTopTracks(json) {
       gist_id,
       files: {
         [filename]: {
-          filename: 'Spotify Top Tracks',
+          filename: 'spotify',
           content: lines.join('\n'),
         },
       },
