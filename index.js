@@ -17,7 +17,7 @@ async function main() {
 }
 
 async function envCheck() {
-  if (!GH_TOKEN || !GIST_ID) {
+  if (!github_token || !gist_id) {
     throw new Error(
       `
         spotify-box ran into an issue for getting your Environment Secrets
@@ -68,7 +68,7 @@ async function updateTopTracks(json) {
       gist_id,
       files: {
         [filename]: {
-          filename: 'spotify',
+          filename: '🎵 My Spotify Top Tracks',
           content: lines.join('\n'),
         },
       },
